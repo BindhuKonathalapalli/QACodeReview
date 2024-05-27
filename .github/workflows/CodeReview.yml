@@ -1,0 +1,25 @@
+Here are the Issues I found for code quality issues 
+
+Hardcoded file path:
+In System.setProperty("webdriver.gecko.driver", "C:\\Users\\Johny\\Downloads\\geckodriver-v0.33.0-win64\\geckodriver.exe");, the file path should be configurable or stored as a property.
+
+Implicit Wait:
+Instead of using implicit waits, which can lead to unexpected behavior, prefer explicit waits.
+
+XPath usage:
+The XPath expressions used are complex and brittle. Prefer using more robust locators or strategies such as CSS selectors.
+
+Thread.sleep() usage: 
+Using Thread.sleep() for waiting is not recommended. Prefer using explicit waits for synchronization.
+
+Class within class: 
+The class PagesforAutomationAssignment is defined within the Testcase101 class. It's better to define it in a separate file.
+
+Missing imports:
+There's a missing import statement for ChromeDriver in PagesforAutomationAssignment class.
+
+Inconsistent code formatting: 
+Code formatting should be consistent throughout the file for readability.
+
+Comments: 
+Comments are missing throughout the code, making it difficult to understand the purpose of certain actions or blocks of code.
